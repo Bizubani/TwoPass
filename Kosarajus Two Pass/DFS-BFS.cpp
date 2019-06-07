@@ -55,7 +55,8 @@ void GraphSearch::BFS(UndirectedGraphNode* g)
 {
 
 }
-
+//Depth first search with no finishing times computations but counting the size of the leaders.
+//also works with reverse logic, as all nodes in the graph were seen in the first pass.
 void GraphSearch::DFSnoF(std::vector<DirectedGraphNode>& g, int start)
 {
 	int edgesToExplore = g[start].outgoingEdges.size();
